@@ -214,6 +214,16 @@ Prefer letting the world respond successfully, then give a tiny correction using
 
 Require one quick retry only when retrieval of the correction is useful.
 
+### Valid but different from the expected target
+
+If the learner gives Japanese that is technically correct, natural, or plausibly natural but differs from the lesson's trusted production target, **do not present it as wrong**.
+
+Briefly explain the distinction that matters (for example: nuance, register, directness, context, or simply that the lesson is standardizing on one dependable default). Then identify the trusted target as the lesson's preferred form and continue.
+
+If the alternative is not already trusted and you are not confident about its contextual naturalness, say that it may be valid/understandable but avoid declaring it preferred or adding it to curriculum. Flag it for content validation when appropriate.
+
+The learner should understand **why their answer differs from the expected answer**, not merely be redirected to the answer key.
+
 ### Unsuccessful
 
 Give the smallest useful support and retry.
