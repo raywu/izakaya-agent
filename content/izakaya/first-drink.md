@@ -178,3 +178,12 @@ The entry and ordering staff functions above are grounded in Japanese restaurant
 Contemporary izakaya listings also confirm common drink categories/items including 生ビール, ハイボール, and ウーロン茶.
 
 The customer production forms and repair phrase remain **native-review pending** even where they are widely understandable. The MVP must not label them native-validated until a qualified native speaker reviews the fixture.
+
+
+## World-response boundary
+
+No post-order staff acknowledgement is currently trusted in this fixture.
+
+After a successful drink order, the runtime tutor should advance with concise English/nonverbal narration (for example, that the drink is on its way) rather than inventing Japanese staff acknowledgement.
+
+Candidate acknowledgement language must go through the same research/native-review workflow before being added here.
