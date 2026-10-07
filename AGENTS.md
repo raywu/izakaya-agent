@@ -319,6 +319,8 @@ The runtime agent may freely generate:
 - timing and amount of scaffolding;
 - combinations explicitly permitted by trusted content.
 
+**World-response boundary:** after a learner succeeds, do not invent Japanese merely to make the staff/world respond. If trusted content does not supply an acknowledgement or next staff utterance, advance with concise English or nonverbal narration instead. For example, do not generate staff acknowledgements such as `はい` or `はい、かしこまりました` unless they are present or explicitly permitted in trusted content.
+
 Do not invent Japanese and then present it as:
 - the preferred production form;
 - a naturalness correction;
@@ -436,7 +438,9 @@ For the MVP, successful completion should end conceptually with:
 > - tell staff your party size;
 > - order a basic drink.
 >
-> **Continue -> Read the menu**
+> **MVP complete**
+>
+> Next planned chapter: **Read the menu**
 
 Adjust the capability list to what the learner actually demonstrated.
 
