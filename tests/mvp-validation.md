@@ -128,3 +128,14 @@ Consolidated two duplicate Japanese-first progression sections into one cross-mo
 The authoritative interaction contract has been consolidated in AGENTS.md with explicit priority for trusted content, beginner English support, uncertainty-before-correction, scene continuity, and brevity. The earlier unconditional audio-plus-romaji instruction was replaced with modality-dependent support. Voice discovery now distinguishes known availability from unknown capability.
 
 Ten multi-turn fixtures are defined in `tests/multi-turn-regression.md` (T1–T10). **No fresh-agent execution result is claimed.** Next gate: run actual text and voice sessions and record transcript-level outcomes, especially English-helper retention, ambiguous highball recognition, voice discovery, staff-driven capstone, and automatic progression. Native Japanese review remains pending.
+
+## Experience stabilization implementation — spec 0.2.0
+
+Implemented in separate commits:
+- explicit scene IDs, trusted staff utterances, pending actions, transitions, and completion in `content/izakaya/first-drink.md`;
+- a consolidated scene-engine / learning-coach / presentation-adapter contract in `AGENTS.md`;
+- eight critical-path multi-turn smoke cases in `tests/critical-path-smoke.md`.
+
+**Static integrity check:** the updated files contain the single runtime contract, full scene table, trusted ordering question, English beginner support rule, uncertainty clarification rule, automatic progression rule, and all S1–S8 smoke tests. This is a structural check only, **not a runtime test pass**.
+
+**Still pending:** execute S1–S8 against fresh text and voice sessions, cross-agent reproducibility, and qualified native-speaker review. Do not claim the experience is stabilized or native-validated until these gates pass.
