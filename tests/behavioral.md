@@ -200,3 +200,18 @@ Each test uses **Given / When / Require / Forbid**. Differences in prose are fin
 
 ## B35 — Separated versus unified surfaces
 **Given:** voice host with or without independent visual output. **When:** tutor provides romaji/choices. **Require:** silent visual support only when supported, otherwise spoken-optimized output with on-demand rescue. **Forbid:** assuming display text stays silent.
+
+## B36 — Japanese-first staff prompt
+**Given:** a new staff-led scene. **When:** the interaction starts. **Require:** trusted Japanese staff phrase before English guidance. **Forbid:** English explanation before the Japanese.
+
+## B37 — Clarification side quest
+**Given:** an unanswered staff prompt. **When:** learner asks for meaning. **Require:** brief explanation and return to that same unresolved prompt. **Forbid:** scene reset or mandatory clarification after every turn.
+
+## B38 — Automatic progression
+**Given:** learner succeeds and another scene beat exists. **When:** tutor responds. **Require:** natural consequence and next trusted prompt without requiring "Continue". **Forbid:** dead-end praise.
+
+## B39 — Staff-driven capstone
+**Given:** final drink ordering. **When:** the exchange begins. **Require:** trusted Japanese staff ordering question. **Forbid:** replacing it with an English production drill.
+
+## B40 — Scope and completion
+**Given:** final order succeeds. **When:** MVP ends. **Require:** evidence-backed completion summary. **Forbid:** unrelated appetizers, untrusted staff Japanese, or an unavailable CTA.
