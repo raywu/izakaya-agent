@@ -118,3 +118,7 @@ The runtime must mention voice once near the beginning when it is available but 
 ## Voice dogfood — observed presentation defect
 
 In an actual voice session, Japanese script followed by romaji was read aloud as two renditions of the same phrase. This is a confirmed presentation failure, not evidence of poor Japanese content. Voice V1 adds spoken/visual surface separation and unified-host fallback; tests B31–B35 cover regressions. These tests are **specified, not yet empirically passed**. A fresh voice session is required before declaring the issue resolved.
+
+## Unified interaction UX implementation
+
+Consolidated two duplicate Japanese-first progression sections into one cross-modal interaction contract. Added explicit state transitions, one-outstanding-action rule, clarification return semantics, staff-driven capstone behavior, and presentation differences for chat/voice. Added behavioral tests B41–B44 and adversarial scenarios. **These are specification changes, not empirical passes.** The next gate is paired fresh chat and voice dogfood, followed by targeted failures and capstone verification.
