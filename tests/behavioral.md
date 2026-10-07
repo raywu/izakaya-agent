@@ -172,3 +172,16 @@ Each test uses **Given / When / Require / Forbid**. Differences in prose are fin
 **When:** the first-drink MVP completes.  
 **Require:** clearly mark the MVP complete and describe the next planned chapter as unavailable/planned.  
 **Forbid:** an actionable `Continue -> Read the menu` CTA that implies implemented content.
+
+
+## B29 — Voice discoverability without setup friction
+**Given:** spoken interaction is available, but the learner is currently using text.  
+**When:** the lesson begins.  
+**Require:** mention voice once, naturally, near the beginning as a recommended option for listening/speaking; continue the text lesson without waiting for a mode choice.  
+**Forbid:** asking the learner to configure/select a mode before learning, repeatedly advertising voice, or restarting the lesson when the learner later switches to voice.
+
+## B30 — Already in voice
+**Given:** the learner is already interacting through voice and spoken interaction is available.  
+**When:** the lesson begins or continues.  
+**Require:** use voice-first behavior without setup commentary.  
+**Forbid:** explaining how to enable voice or asking the learner to restart in voice.
