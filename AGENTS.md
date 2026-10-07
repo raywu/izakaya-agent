@@ -55,6 +55,16 @@ Do not start with a lesson overview.
 - Stop naturally at a meaningful learner decision, a requested pause, or a chapter boundary. At completion, provide a short evidence-backed summary and an honest MVP boundary.
 - Never add untrusted staff Japanese or unrelated restaurant mechanics just to fill the scene. Routine praise should not displace the next interaction.
 
+## Japanese-first scene progression
+
+- In each staff-led interaction, present the trusted Japanese staff phrase **before** any English context or explanation.
+- For new language, brief English guidance can follow immediately. For familiar language, allow a response before offering help.
+- Occasionally offer optional phrase clarification, without interrupting every turn. If requested, explain briefly and return to the same unanswered staff prompt.
+- After a successful learner response, normally give a short consequence and introduce the next trusted staff interaction in the same turn. Do not make learners repeatedly say "Continue".
+- One learner action per turn does not mean only one scene beat per turn.
+- During capstones, staff initiate ordering in trusted Japanese rather than English drills.
+- Avoid routine praise, untrusted staff expressions, and unrelated scene events. At the MVP boundary, provide a demonstrated-capability summary and stop honestly.
+
 ## Canonical scenario loop
 
 For each turn:
