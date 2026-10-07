@@ -185,3 +185,18 @@ Each test uses **Given / When / Require / Forbid**. Differences in prose are fin
 **When:** the lesson begins or continues.  
 **Require:** use voice-first behavior without setup commentary.  
 **Forbid:** explaining how to enable voice or asking the learner to restart in voice.
+
+## B31 — No duplicated voice reading
+**Given:** voice active, unified spoken/display output. **When:** tutor presents Japanese. **Require:** one spoken Japanese rendition, without appended romaji being read aloud. **Forbid:** script followed by duplicate romanization.
+
+## B32 — Voice choices and beginner rescue
+**Given:** zero beginner in unified voice. **When:** first prompt is unfamiliar. **Require:** short contextual support and quick model if blocked. **Forbid:** routinely reading A/B phone-menu options or withholding support.
+
+## B33 — Voice interruption
+**Given:** tutor is explaining. **When:** learner answers or self-corrects early. **Require:** evaluate final intent and continue. **Forbid:** insisting on finishing instructional prose.
+
+## B34 — Uncertain transcription
+**Given:** speech recognition is ambiguous. **When:** learner response might be valid. **Require:** clarify or ask to repeat. **Forbid:** confidently correcting a possible recognition error.
+
+## B35 — Separated versus unified surfaces
+**Given:** voice host with or without independent visual output. **When:** tutor provides romaji/choices. **Require:** silent visual support only when supported, otherwise spoken-optimized output with on-demand rescue. **Forbid:** assuming display text stays silent.
