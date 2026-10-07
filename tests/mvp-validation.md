@@ -2,7 +2,7 @@
 
 **Spec:** 0.1.0  
 **Scope:** fresh-agent handoff / behavioral dogfood  
-**Status:** passes design-level validation; native Japanese review remains pending.
+**Status:** design-level validation plus one real learner golden-path session; native Japanese review remains pending.
 
 ## Fresh-agent smoke test
 
@@ -67,3 +67,40 @@ Do not label the MVP's Japanese native-validated or production-ready until a qua
 The repository is ready for real learner dogfood and native-language review.
 
 Do not expand into food ordering, handwritten specials, payment, omakase, or convenience-store content until the first-drink experience has been tested with actual learners and the trusted Japanese fixture has passed native review.
+
+
+## Real learner dogfood — golden path
+
+A first real text-session learner completed the MVP successfully.
+
+Observed evidence:
+- zero-setup start worked;
+- situational A/B beginner scaffolding worked;
+- support reduced into free romaji production;
+- learner independently produced the one-person response;
+- learner reused the ordering pattern across oolong tea and highball;
+- the capstone changed party size and drink;
+- no listening evidence was collected because the session was text-based.
+
+The session did **not** exercise wrong answers, hint requests, romaji restoration, remediation, conversational repair, voice behavior, or portable-state re-entry.
+
+### Compliance finding
+
+The runtime generated untrusted staff acknowledgements (`はい` and `はい、かしこまりました`) after successful orders. This was a runtime compliance failure: the existing trusted-content boundary did not authorize those expressions.
+
+Regression coverage is now required by behavioral test B27 and the explicit world-response rule in `AGENTS.md`.
+
+### Scope finding
+
+The previous completion CTA implied that `Read the menu` was immediately available even though Chapter 2 did not exist. Until that content is implemented, the MVP must end honestly as complete and label menu reading as the next planned chapter.
+
+## Targeted retest gate
+
+Before expanding curriculum, exercise at least:
+1. wrong party-size answer;
+2. explicit help/romaji request;
+3. English response to a Japanese prompt;
+4. failure after scaffold release and support restoration;
+5. voice path when a suitable voice-capable fresh agent is available.
+
+Do not treat unexercised paths as validated merely because they are specified.
