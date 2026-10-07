@@ -10,6 +10,34 @@ Enter a common izakaya interaction, state party size, follow the seating cue, an
 
 This is one common path, not a universal sequence. Real restaurants may ask about reservations, seating, ordering systems, or other details.
 
+## Scene sequence (MVP runtime contract)
+
+Use these stable scene IDs and transitions. This is an **interaction graph**, not a fixed script; scaffolding, pacing, and learner choices adapt.
+
+| Scene ID | Trusted staff utterance | Pending learner action | On resolution |
+|---|---|---|---|
+| entry | いらっしゃいませ | Choose alone or with a friend (ungraded) | party_size |
+| party_size | 何名様でしょうか？ (or trusted variant) | Respond with party size | seating |
+| seating | こちらへどうぞ。 | Follow the direction; no spoken answer required | first_order |
+| first_order | ご注文はお決まりですか？ | Order a chosen validated drink | changed_item |
+| changed_item | ご注文はお決まりですか？ | Order a different validated drink using less support | capstone_entry |
+| capstone_entry | いらっしゃいませ | Establish a changed party context (ungraded) | capstone_party |
+| capstone_party | 何名様ですか？ (trusted variant) | Respond with changed party size | capstone_seating |
+| capstone_seating | こちらへどうぞ。 | Follow the direction; no spoken answer required | capstone_order |
+| capstone_order | ご注文はお決まりですか？ | Order a validated drink in the changed context | complete |
+| complete | None | No pending learner action | Evidence-backed MVP summary; next chapter planned, not available |
+
+**Rules:**
+- Only the listed staff expressions and permitted item substitutions may be used. No English line may impersonate a Japanese staff utterance.
+- A seating cue is recognition-only; do not wait for a verbal learner answer. Give a short world consequence, then present the next trusted staff question.
+- After a resolved learner action, transition automatically and present the next Japanese staff prompt in the same turn, except at the chapter boundary or when a meaningful learner choice is pending.
+- During a clarification, keep the scene ID, chosen party size, chosen drink, and pending action unchanged.
+- The changed-item retrieval is a transparent brief replay if a second ordering visit would be implausible; do not invent an extra staff interaction merely to hide the drill.
+- For capstone transfer, change party size and drink using only trusted variables. Do not skip the capstone ordering question.
+- When a learner is blocked, model the trusted response and allow supported completion; do not loop indefinitely.
+- The learner's party/drink choice must be known before asking for a response that depends on it. Never assume a drink without context.
+- Do not introduce appetizers, taste reactions, payment, or additional restaurant events in this MVP.
+
 ## Romanization
 
 Use standard Hepburn romanization with macrons for learner-facing romaji.
