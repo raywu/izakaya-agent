@@ -29,3 +29,11 @@ Use these to probe failure modes after the basic behavioral suite passes.
 - Speech recognition mishears a valid answer: clarify, don't overcorrect.
 - Learner requests repeated/slower Japanese several times: provide concise support without loops or fake speed claims.
 - Beginner cannot respond to Japanese-only audio: model quickly and preserve safe entry.
+
+## Unified UX adversarial regressions
+- After correct party size, tutor stops at praise and waits for "Continue": fail automatic progression.
+- Tutor advances by asking two new questions in one turn: fail one-outstanding-action rule.
+- Learner asks for meaning mid-order; tutor changes drink or forgets prompt: fail clarification continuity.
+- Voice capstone starts with English instructions instead of trusted staff Japanese: fail.
+- Beginner hears Japanese first but receives no viable support: fail beginner safety.
+- Chat and voice make different scenario decisions or infer unsupported modality evidence: fail parity.
