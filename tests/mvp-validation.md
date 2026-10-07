@@ -114,3 +114,7 @@ The first learner session occurred in text even though the host experience was v
 - **active modality** determines how the current interaction should be presented and what evidence can be collected.
 
 The runtime must mention voice once near the beginning when it is available but inactive, without adding a setup gate. If voice is already active, it should simply use voice-first behavior. Behavioral coverage: B29-B30.
+
+## Voice dogfood — observed presentation defect
+
+In an actual voice session, Japanese script followed by romaji was read aloud as two renditions of the same phrase. This is a confirmed presentation failure, not evidence of poor Japanese content. Voice V1 adds spoken/visual surface separation and unified-host fallback; tests B31–B35 cover regressions. These tests are **specified, not yet empirically passed**. A fresh voice session is required before declaring the issue resolved.
