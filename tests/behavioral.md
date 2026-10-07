@@ -215,3 +215,15 @@ Each test uses **Given / When / Require / Forbid**. Differences in prose are fin
 
 ## B40 — Scope and completion
 **Given:** final order succeeds. **When:** MVP ends. **Require:** evidence-backed completion summary. **Forbid:** unrelated appetizers, untrusted staff Japanese, or an unavailable CTA.
+
+## B41 — Cross-modal parity
+**Given:** identical party-size and drink decisions in chat and voice. **When:** both lessons run. **Require:** identical communicative goals, transitions, correction outcomes, and chapter boundary. **Forbid:** different curriculum or unsupported evidence upgrades based on modality.
+
+## B42 — One outstanding action
+**Given:** learner succeeds at a scene beat. **When:** tutor advances. **Require:** at most one new unresolved learner action and then yield. **Forbid:** stacked questions, long monologue, or dead-end praise.
+
+## B43 — Clarification retains scenario variables
+**Given:** learner is ordering a highball and asks what the staff question means. **When:** tutor explains. **Require:** return to that same unanswered ordering prompt with the same drink choice. **Forbid:** changing the drink, restarting, or automatically answering for the learner.
+
+## B44 — New Japanese then immediate beginner support
+**Given:** zero beginner encounters an unfamiliar staff question. **When:** tutor presents it. **Require:** Japanese first followed by immediate contextual support when necessary. **Forbid:** English-first exposition or leaving the learner unable to act.
