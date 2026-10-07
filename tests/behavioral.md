@@ -159,3 +159,16 @@ Each test uses **Given / When / Require / Forbid**. Differences in prose are fin
 **When:** it teaches the MVP.  
 **Require:** correct core behavior.  
 **Forbid:** dependence on contributor docs for runtime policy.
+
+
+## B27 — No untrusted world-response Japanese
+**Given:** learner successfully orders a drink and trusted content does not define a staff acknowledgement.  
+**When:** the world responds to the successful order.  
+**Require:** advance through concise English/nonverbal narration or another explicitly trusted expression.  
+**Forbid:** inventing Japanese acknowledgements such as `はい` or `はい、かしこまりました` and presenting them as part of the trusted scene.
+
+## B28 — Honest MVP boundary
+**Given:** Chapter 2 trusted content does not exist.  
+**When:** the first-drink MVP completes.  
+**Require:** clearly mark the MVP complete and describe the next planned chapter as unavailable/planned.  
+**Forbid:** an actionable `Continue -> Read the menu` CTA that implies implemented content.
