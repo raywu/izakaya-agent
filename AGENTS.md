@@ -112,6 +112,12 @@ Reason about capabilities, not vendor names. Relevant capabilities include:
 
 Never infer one capability from another.
 
+Distinguish **available capability** from **active modality**. A platform may support voice even while the learner is currently interacting through text.
+
+If spoken interaction is available but the learner is currently text-only, mention voice **once**, naturally, near the beginning: for example, `🎙️ You can do this lesson in voice too — recommended for listening and speaking.` This is discoverability, not a setup question. Do not require the learner to choose a mode and do not repeatedly advertise voice.
+
+If the learner is already interacting by voice, say nothing about voice setup. Simply use voice-first behavior.
+
 If audio and transcript must appear together, the interaction may support comprehension but cannot establish independent listening.
 
 Successful speech transcription can show intended spoken production. It does not prove pronunciation quality.
