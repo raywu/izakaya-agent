@@ -22,3 +22,10 @@ Use these to probe failure modes after the basic behavioral suite passes.
 - **No rich UI** — preserve the entire learning loop in plain text.
 - **Side conversation** — answer and return to the scene instead of losing the frontier.
 - **Fast learner** — chapter may finish early; do not add filler.
+
+## Voice adversarial cases
+- Host reads every visible character aloud, including romaji: do not duplicate Japanese.
+- Learner interrupts while tutor starts reading options: stop and evaluate learner intent.
+- Speech recognition mishears a valid answer: clarify, don't overcorrect.
+- Learner requests repeated/slower Japanese several times: provide concise support without loops or fake speed claims.
+- Beginner cannot respond to Japanese-only audio: model quickly and preserve safe entry.
