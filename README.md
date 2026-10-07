@@ -24,6 +24,8 @@ A successful setup should put you into the izakaya within the first interaction.
 
 Voice is preferred when the host supports it, especially for staff dialogue and learner responses. Text remains a complete fallback.
 
+If you're using text and your AI offers a voice mode, you can switch into voice and continue the same lesson; you should not need to restart or configure a separate voice curriculum. The tutor should also mention voice once near the beginning when it can detect that voice is available but not currently active.
+
 ### If your AI cannot read the repository correctly
 
 Try the raw instructions:
