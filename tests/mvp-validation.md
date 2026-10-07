@@ -104,3 +104,13 @@ Before expanding curriculum, exercise at least:
 5. voice path when a suitable voice-capable fresh agent is available.
 
 Do not treat unexercised paths as validated merely because they are specified.
+
+
+## Voice-discoverability dogfood finding
+
+The first learner session occurred in text even though the host experience was voice-capable. This exposed a distinction missing from the original runtime contract:
+
+- **available capability** determines whether voice should be discoverable;
+- **active modality** determines how the current interaction should be presented and what evidence can be collected.
+
+The runtime must mention voice once near the beginning when it is available but inactive, without adding a setup gate. If voice is already active, it should simply use voice-first behavior. Behavioral coverage: B29-B30.
