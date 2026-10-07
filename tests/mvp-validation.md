@@ -122,3 +122,9 @@ In an actual voice session, Japanese script followed by romaji was read aloud as
 ## Unified interaction UX implementation
 
 Consolidated two duplicate Japanese-first progression sections into one cross-modal interaction contract. Added explicit state transitions, one-outstanding-action rule, clarification return semantics, staff-driven capstone behavior, and presentation differences for chat/voice. Added behavioral tests B41–B44 and adversarial scenarios. **These are specification changes, not empirical passes.** The next gate is paired fresh chat and voice dogfood, followed by targeted failures and capstone verification.
+
+## Regression-hardening implementation (October 2026)
+
+The authoritative interaction contract has been consolidated in AGENTS.md with explicit priority for trusted content, beginner English support, uncertainty-before-correction, scene continuity, and brevity. The earlier unconditional audio-plus-romaji instruction was replaced with modality-dependent support. Voice discovery now distinguishes known availability from unknown capability.
+
+Ten multi-turn fixtures are defined in `tests/multi-turn-regression.md` (T1–T10). **No fresh-agent execution result is claimed.** Next gate: run actual text and voice sessions and record transcript-level outcomes, especially English-helper retention, ambiguous highball recognition, voice discovery, staff-driven capstone, and automatic progression. Native Japanese review remains pending.
